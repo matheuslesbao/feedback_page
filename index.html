@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>FeedBack</title>
+</head>
+<body>
+<main class="container my-3">
+    <p>Esta avaliação é para o :</p>
+
+    <forma action="post">
+        <fieldset>
+            <div>
+                <legend>Estou fazendo esta pesquisa como:</legend>
+                    <ul class="d-flex gap-4 list-unstyled">
+                        <div>
+                            <li>  
+                                <input id="subordinado" class="btn-check" name="pesquisa"type="radio" autocomplete="off" required>
+                                <label for="subordinado" class="btn btn-outline-primary" >Subordinado (Este é meu líder/gerente) </label>  
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <input id="chefe" class="btn-check" name="pesquisa"type="radio" autocomplete="off" required>
+                                <label for="chefe" class="btn btn-outline-primary" >Um membro atual da minha Equipe (atualmente trabalho com ele)</label>
+                            </li>
+    
+                        </div>
+                        <div>
+                        <li >
+                            <input id="CEO" class="btn-check" name="pesquisa"type="radio" autocomplete="off" required>
+                            <label for="CEO" class="btn btn-outline-primary" >Como colega de trabalho, interajo com ele no dia a dia</label>
+                        </li>
+                        </div>
+                    </ul>
+                </div>
+                
+                <div>
+                    <legend>Quer voltar a trabalhar com fulano ?</legend>
+                    <ul class="d-flex gap-2 list-unstyled">
+                        <li>
+                            <input id="d__nao" class="btn-check" name="work"type="radio" autocomplete="off" required>
+                            <label for="d__nao" class="btn btn-outline-primary" >Definitivamente não</label>
+                        </li>
+
+                        <li>
+                        <input id="nao" class="btn-check" name="work"type="radio" autocomplete="off" required>
+                        <label for="nao" class="btn btn-outline-primary px-5" >Não</label>
+                        </li>
+
+                        <li>
+                            <input id="indiferente" class="btn-check" name="work"type="radio" autocomplete="off" required>
+                            <label for="indiferente" class="btn btn-outline-primary" >Indiferente</label>
+                        </li>
+                        <li>
+                            <input id="sim" class="btn-check" name="work"type="radio" autocomplete="off" required>
+                            <label for="sim" class="btn btn-outline-primary px-5" >Sim</label>
+                        </li>
+                        <li>
+                            <input id="d__sim" class="btn-check" name="work"type="radio" autocomplete="off" required>
+                            <label for="d__sim" class="btn btn-outline-primary" >Definitivamente sim</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <label for="info__item1">O que ele esta fazendo.</label>
+                    <br>
+                    <textarea class="container" name="info__item1" id="info__item1" cols="80" rows="4"></textarea>
+                </div>
+                
+                <div>
+                    <label for="info__item2">No que ele deve melhorar   </label>
+                    <br>
+                    <textarea  class="container" name="info__item2" id="info__item2" cols="80" rows="4"></textarea>
+                </div>
+                
+            </fieldset>
+            <div class="d-flex justify-content-around">
+                <a name="" id="" class="btn btn-outline-danger href="#" role="button">Voltar</a>
+
+                <a name="" id="" class="btn btn-outline-success" href="#" role="button">Enviar</a>
+            </div>
+        </form>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
